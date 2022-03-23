@@ -12,9 +12,12 @@ body {
   color: white;
 }
 nav {
+  padding-block: 3rem !important;
+
   .navbar-brand h1 {
     font-weight: 800;
     color: white;
+    font-size: 36px;
   }
   .navbar-toggler {
     width: 20px;
@@ -87,5 +90,28 @@ nav {
     font-size: 14px;
   }
   .explore {
+    background: 
+    linear-gradient($dark-color-200, $dark-color-200) padding-box,
+    linear-gradient(to right, #6C2ED0, #FF00C7) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: .8rem 3rem;
+  }
+}
+
+
+@media (max-width:992px) {
+  nav {
+    padding-block: 1.5rem !important;
+    .navbar-brand h1 {
+      font-size: 26px;
+    }
+    // .explore {
+    //   margin-block: 2rem;
+    // }
+    ul:nth-of-type(2) > div {
+      // margin-left: 20px;
+      margin: 10px 2px 20px 20px;
+    }
   }
 }
