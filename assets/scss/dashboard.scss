@@ -1,1 +1,125 @@
 @import "./variables.scss";
+
+.dashboard-wrapper {
+  .mainContent {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    .sidebarHolder {
+      .sideBarWrapper {
+        background: linear-gradient(
+          180deg,
+          rgba(38, 34, 80, 0.65) 0%,
+          rgba(27, 25, 66, 0.85) 57.44%,
+          #17163b 100%
+        );
+        height: 100vh;
+        min-width: 300px;
+        max-width: 300px;
+        transition: all 0.3s;
+        &.active {
+          margin-left: -200px;
+        }
+        &-content {
+          .sidebar-item {
+            &-icon {
+              img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mainContentHolder {
+      width: 100%;
+      nav {
+        .nav-select {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: transparent;
+          border: none;
+          color: white;
+          padding-right: 30px;
+          background-image: url("../img/cheveron.svg");
+          background-repeat: no-repeat;
+          background-position: calc(100% - 5px) center;
+          background-size: 15px;
+          &:focus {
+            background: transparent url("../img/cheveron.svg") no-repeat;
+            background-position: calc(100% - 5px) center;
+            background-size: 15px;
+            color: white;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .input-group {
+          &-text {
+            background: transparent;
+            border: none;
+          }
+        }
+        .nav-btn {
+          border: 2px solid #53b9ea;
+          border-radius: 30px;
+        }
+        .nav-btn-blue {
+          background: linear-gradient(136.67deg, #53b9ea 8.34%, #2f80ed 95.26%);
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          box-shadow: 0px 4px 31px #53b9ea;
+          border-radius: 4px;
+        }
+        .nav-btn-purple {
+          background: linear-gradient(136.67deg, #ff409a 8.34%, #c438ef 95.26%);
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          box-shadow: 0px 4px 31px #ba1358;
+          border-radius: 4px;
+        }
+        .profile-img {
+          border-radius: 3px;
+          width: 30px;
+          height: 30px;
+        }
+        .left-border {
+          border-left: 3px solid #494949;
+        }
+
+        ul {
+          li {
+            margin-right: 18px;
+          }
+          li.nav-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      }
+      main {
+        .welcome-header {
+          h6 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            font-feature-settings: "salt" on, "liga" off;
+            color: #5b5a99;
+          }
+          h4 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 44px;
+            font-feature-settings: "salt" on, "liga" off;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
