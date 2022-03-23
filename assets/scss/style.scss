@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-
-$dark-color-50: #250b3a;
-$dark-color-100: #160625;
-$dark-color-200: #0c001d;
-$gray-color: #b6b6b6;
-$blue-color: #02aeca;
+@import "./variables.scss";
 
 * {
   margin: 0;
@@ -89,9 +84,8 @@ nav {
     border: 0 !important;
   }
   .en {
-      font-size: 14px;
+    font-size: 14px;
   }
   .explore {
-    
   }
 }
