@@ -88,6 +88,54 @@ nav .explore {
   padding: 0.8rem 3rem;
 }
 
+.heroHome {
+  background: url(../img/galaxy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.heroHome .frock {
+  height: 80vh;
+}
+.heroHome .frock h1 {
+  margin-top: 3rem;
+  font-weight: 900;
+}
+.heroHome .frock h1 span {
+  font-size: 85px;
+}
+.heroHome .frock h1 span:nth-of-type(2) {
+  background: linear-gradient(to right, #FF00C7, #6C2ED0) border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heroHome .frock button {
+  background: linear-gradient(80.82deg, rgba(255, 75, 0, 0.2) 53.38%, rgba(255, 75, 0, 0.2) 96.22%), radial-gradient(100% 1020.58% at 100% 0%, #ed2f2f 0%, #544ec7 29.57%, #2f80ed 100%);
+  box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
+  border-radius: 37.4707px;
+  border: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+.heroHome .frock .circle {
+  background: url(../img/pink-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+.heroHome .frock .circle img:nth-of-type(2) {
+  left: 0;
+  top: 30%;
+  width: 35%;
+}
+
+.planet {
+  max-width: 1000px;
+  background: transparent;
+  box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
 @media (max-width: 992px) {
   nav {
     padding-block: 1.5rem !important;
