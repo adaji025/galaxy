@@ -275,6 +275,14 @@
             color: #ffffff;
           }
         }
+        .curved-card {
+          min-height: 200px;
+          width: 100%;
+          // clip-path: ellipse(90% 100% at 50% 0%);
+          clip-path: ellipse(75% 100% at 50% 100%);
+          background: rgba(30, 27, 66, 0.4);
+          // background: rgba(105, 97, 189, 0.4);
+        }
       }
     }
   }

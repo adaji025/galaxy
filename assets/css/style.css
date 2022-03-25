@@ -231,6 +231,12 @@
   font-feature-settings: "salt" on, "liga" off;
   color: #ffffff;
 }
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card {
+  min-height: 200px;
+  width: 100%;
+  clip-path: ellipse(75% 100% at 50% 100%);
+  background: rgba(30, 27, 66, 0.4);
+}
 
 .flex-col {
   flex-direction: column;
