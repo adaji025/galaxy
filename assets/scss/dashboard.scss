@@ -7,31 +7,75 @@
     align-items: stretch;
     .sidebarHolder {
       .sideBarWrapper {
+        a {
+          text-decoration: none;
+          color: white;
+        }
         background: linear-gradient(
           180deg,
           rgba(38, 34, 80, 0.65) 0%,
           rgba(27, 25, 66, 0.85) 57.44%,
           #17163b 100%
         );
-        height: 100vh;
+        height: 100%;
         min-width: 400px;
         max-width: 400px;
         transition: all 0.3s;
         &.active {
+          height: 100vh;
           margin-left: -310px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: end;
           .sideBarWrapper-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: end;
             .sidebar-item {
               display: none !important;
             }
             .icon-only {
               display: block;
+              &.active {
+                img.active {
+                  display: block;
+                }
+                img.inactive {
+                  display: none;
+                }
+              }
+              &.inactive {
+                img.active {
+                  display: none;
+                }
+                img.inactive {
+                  display: block;
+                }
+              }
+            }
+            .sidebar-toggler {
+              cursor: pointer;
+              img.open {
+                display: block;
+              }
+              img.close {
+                display: none;
+              }
+            }
+            .sidebar-card-holder {
+              display: none;
             }
           }
         }
         &-content {
+          .sidebar-toggler {
+            cursor: pointer;
+            position: relative;
+            right: 35px;
+            img.open {
+              display: none;
+            }
+            img.close {
+              display: block;
+            }
+          }
           .sidebar-item {
             &-icon {
               img {
@@ -49,6 +93,97 @@
           }
           .top-sidebar-item-holder {
             margin-bottom: 145px;
+          }
+          .other-sidebar-items-holder {
+            .single-sidebar-item {
+              width: 100%;
+            }
+            .sidebar-item {
+              .state-icon {
+                img {
+                  width: 50px;
+                  height: 50px;
+                  margin: -15px 0 0 -15px;
+                  visibility: hidden;
+                }
+              }
+              &-text {
+                h3 {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 22px;
+                  line-height: 19px;
+                  letter-spacing: 0.5px;
+                  color: $sidebar-inactive-text-color;
+                }
+              }
+              &-icon {
+                img.active {
+                  display: none;
+                }
+                img.inactive {
+                  display: block;
+                }
+              }
+              &-noti-icon {
+                img {
+                  visibility: hidden;
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+              &.active {
+                .state-icon {
+                  img {
+                    visibility: visible;
+                  }
+                }
+                .sidebar-item-text {
+                  h3 {
+                    color: $sidebar-active-text-color;
+                  }
+                }
+                .sidebar-item-icon {
+                  img.active {
+                    display: block;
+                  }
+                  img.inactive {
+                    display: none;
+                  }
+                }
+                .sidebar-item-noti-icon {
+                  img {
+                    visibility: visible;
+                  }
+                }
+              }
+            }
+          }
+          .sidebar-card-holder {
+            display: block;
+            .sidebar-card {
+              background: linear-gradient(180deg, #13b2e6 0%, #2f80ed 100%);
+              border-radius: 16px;
+              padding: 27px;
+              h4 {
+                font-style: bold;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: 0.016em;
+                color: #fafcfe;
+              }
+              p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: -0.02em;
+
+                color: #ffffff;
+              }
+            }
           }
         }
       }

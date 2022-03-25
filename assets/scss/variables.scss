@@ -3,3 +3,15 @@ $dark-color-100: #160625;
 $dark-color-200: #0c001d;
 $gray-color: #b6b6b6;
 $blue-color: #02aeca;
+$sidebar-inactive-text-color: #6f6c99;
+$sidebar-active-text-color: #53b9ea;
+
+.flex-col {
+  flex-direction: column;
+}
+
+.pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}

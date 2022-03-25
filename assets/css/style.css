@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+.flex-col {
+  flex-direction: column;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
 .dashboard-wrapper .mainContent {
   display: flex;
   width: 100%;
@@ -6,15 +14,18 @@
 }
 .dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper {
   background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163b 100%);
-  height: 100vh;
+  height: 100%;
   min-width: 400px;
   max-width: 400px;
   transition: all 0.3s;
 }
-.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active {
-  margin-left: -310px;
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper a {
+  text-decoration: none;
+  color: white;
 }
-.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content {
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active {
+  height: 100vh;
+  margin-left: -310px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
@@ -23,6 +34,41 @@
   display: none !important;
 }
 .dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .icon-only {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .icon-only.active img.active {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .icon-only.active img.inactive {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .icon-only.inactive img.active {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .icon-only.inactive img.inactive {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .sidebar-toggler {
+  cursor: pointer;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .sidebar-toggler img.open {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .sidebar-toggler img.close {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper.active .sideBarWrapper-content .sidebar-card-holder {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-toggler {
+  cursor: pointer;
+  position: relative;
+  right: 35px;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-toggler img.open {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-toggler img.close {
   display: block;
 }
 .dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-item-icon img {
@@ -38,6 +84,74 @@
 }
 .dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .top-sidebar-item-holder {
   margin-bottom: 145px;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .single-sidebar-item {
+  width: 100%;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item .state-icon img {
+  width: 50px;
+  height: 50px;
+  margin: -15px 0 0 -15px;
+  visibility: hidden;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item-text h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #6f6c99;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item-icon img.active {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item-icon img.inactive {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item-noti-icon img {
+  visibility: hidden;
+  width: 25px;
+  height: 25px;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item.active .state-icon img {
+  visibility: visible;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item.active .sidebar-item-text h3 {
+  color: #53b9ea;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item.active .sidebar-item-icon img.active {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item.active .sidebar-item-icon img.inactive {
+  display: none;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .other-sidebar-items-holder .sidebar-item.active .sidebar-item-noti-icon img {
+  visibility: visible;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-card-holder {
+  display: block;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-card-holder .sidebar-card {
+  background: linear-gradient(180deg, #13b2e6 0%, #2f80ed 100%);
+  border-radius: 16px;
+  padding: 27px;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-card-holder .sidebar-card h4 {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.016em;
+  color: #fafcfe;
+}
+.dashboard-wrapper .mainContent .sidebarHolder .sideBarWrapper-content .sidebar-card-holder .sidebar-card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .dashboard-wrapper .mainContent .mainContentHolder {
   width: 100%;
@@ -116,6 +230,14 @@
   line-height: 44px;
   font-feature-settings: "salt" on, "liga" off;
   color: #ffffff;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
 
 * {
