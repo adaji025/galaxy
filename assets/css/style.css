@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 .flex-col {
   flex-direction: column;
 }
@@ -157,6 +157,9 @@
 .dashboard-wrapper .mainContent .mainContentHolder {
   width: 100%;
 }
+.dashboard-wrapper .mainContent .mainContentHolder nav {
+  background: #0c001d;
+}
 .dashboard-wrapper .mainContent .mainContentHolder nav .nav-select {
   appearance: none;
   -moz-appearance: none;
@@ -252,6 +255,7 @@
 .dashboard-wrapper .mainContent .mainContentHolder main .curved-card {
   min-height: 200px;
   width: 100%;
+  padding-top: 7rem !important;
   clip-path: ellipse(100% 100% at 50% 100%);
   background: rgba(30, 27, 66, 0.4);
 }
@@ -282,6 +286,47 @@
 .dashboard-wrapper .mainContent .mainContentHolder main .curved-card button a {
   text-decoration: none;
   color: #fff;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .note div {
+  background: linear-gradient(to right, #FF3D00, #53B9EA);
+  border-radius: 20px;
+  padding: 2px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .note div div {
+  background: #0c001d;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=number] {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #FFF !important;
+  color: #fff;
+  outline: none !important;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=number]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=range] {
+  height: 2px;
+}
+@media (max-width: 576px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form .compound > label {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 576px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form .reward > span {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .estimateIncome h5 {
+    font-size: 18px;
+  }
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .estimateIncome h2 {
+    font-size: 20px;
+    line-height: 1rem;
+  }
 }
 .dashboard-wrapper .mainContent .mainContentHolder main .card {
   background: #121029;
@@ -477,8 +522,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
@@ -491,27 +535,22 @@ nav {
   padding-block: 3rem !important;
   /* when Navbar is collpsed */
 }
-
 nav .navbar-brand h1 {
   font-weight: 800;
   color: white;
   font-size: 36px;
 }
-
 nav .navbar-toggler {
   width: 20px;
   height: 20px;
   position: relative;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   /* when navbar toggles */
 }
-
 nav .navbar-toggler span {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 nav .navbar-toggler .toggler-icon {
   position: absolute;
   height: 3px;
@@ -521,66 +560,48 @@ nav .navbar-toggler .toggler-icon {
   border-radius: 1px;
   opacity: 1;
   left: 0;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
+  transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 nav .navbar-toggler .middle-bar {
   margin-top: 0;
 }
-
 nav .navbar-toggler .top-bar {
   margin-top: 0;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
-
 nav .navbar-toggler .middle-bar {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-
 nav .navbar-toggler .bottom-bar {
   margin-top: 0;
-  -webkit-transform: rotate(-133deg);
-          transform: rotate(-133deg);
+  transform: rotate(-133deg);
 }
-
 nav .navbar-toggler.collapsed .top-bar {
   margin-top: -10px !important;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
-
 nav .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-
 nav .navbar-toggler.collapsed .bottom-bar {
   margin-top: 10px !important;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
-
 nav .navbar-toggler,
 nav .navbar-toggler:focus,
 nav .navbar-toggler:active,
 nav .navbar-toggler-icon:focus {
   outline: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border: 0 !important;
 }
-
 nav .en {
   font-size: 14px;
 }
-
 nav .explore {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0c001d), to(#0c001d)) padding-box, -webkit-gradient(linear, left top, right top, from(#6C2ED0), to(#FF00C7)) border-box;
   background: linear-gradient(#0c001d, #0c001d) padding-box, linear-gradient(to right, #6C2ED0, #FF00C7) border-box;
   border-radius: 50em;
   border: 2px solid transparent;
@@ -594,130 +615,96 @@ nav .explore {
   background-repeat: no-repeat;
   background-size: 70%;
 }
-
 .home .communityDriven h1 {
   font-size: 56px;
   font-weight: 900;
   white-space: nowrap;
 }
-
 .home .communityDriven .buy {
-  background: -webkit-gradient(linear, left top, right top, color-stop(1.7%, #0080FF), color-stop(101.56%, #00B0C8));
   background: linear-gradient(90deg, #0080FF 1.7%, #00B0C8 101.56%);
   opacity: 0.9;
   color: white;
 }
-
 .home .communityDriven .buy img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
-
 .home .heroHome {
   background: url(../img/galaxy.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
 }
-
 .home .heroHome .frock {
   min-height: 80vh;
 }
-
 .home .heroHome .frock h1 {
   margin-top: 3rem;
   font-weight: 900;
 }
-
 .home .heroHome .frock h1 span {
   font-size: 85px;
 }
-
 .home .heroHome .frock h1 span:nth-of-type(2) {
-  background: -webkit-gradient(linear, left top, right top, from(#FF00C7), to(#6C2ED0)) border-box;
   background: linear-gradient(to right, #FF00C7, #6C2ED0) border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .home .heroHome .frock button {
   background: linear-gradient(80.82deg, rgba(255, 75, 0, 0.2) 53.38%, rgba(255, 75, 0, 0.2) 96.22%), radial-gradient(100% 1020.58% at 100% 0%, #ed2f2f 0%, #544ec7 29.57%, #2f80ed 100%);
-  -webkit-box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
   border-radius: 37.4707px;
   border: none;
   font-size: 24px;
   font-weight: 800;
 }
-
 .home .heroHome .frock .circle {
   background: url(../img/pink-circle.svg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
 }
-
 .home .heroHome .frock .circle img:nth-of-type(2) {
   left: 0;
   top: 30%;
   width: 35%;
 }
-
 .home .community {
   border-bottom: 1px solid #fff;
 }
-
 .home .planet {
   max-width: 1100px;
   background: transparent;
-  -webkit-box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
-
 .home .planet h1 {
   font-size: 24px;
   font-weight: 900;
 }
-
 .home .planet .galaxy {
   width: 85%;
   border-right: 1px solid #7e8ea7b2;
 }
-
 .home .planet .uranus {
   width: 240px;
   position: absolute;
   top: -50%;
   background: radial-gradient(100% 1020.58% at 100% 0%, #53b9ea 0%, #2f80ed 29.57%, #2f80ed 100%);
-  -webkit-box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
 }
-
 .home .planet .uranus div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 2.2rem;
   padding-top: 2.2rem;
 }
-
 .home .planet .uranus p {
   font-size: 14px;
 }
-
 .home .whatIsGalaxyNode {
   background: url(../img//particle.svg);
   background-repeat: no-repeat;
@@ -726,27 +713,22 @@ nav .explore {
   margin-top: 8rem;
   padding-bottom: 10rem;
 }
-
 .home .whatIsGalaxyNode h1 {
   font-size: 60px;
   font-weight: 900;
 }
-
 .home .whatIsGalaxyNode .text {
   font-size: 18px;
   color: #b6b6b6;
 }
-
 .home .whatIsGalaxyNode .createNode {
   background: linear-gradient(80.82deg, rgba(255, 75, 0, 0.2) 53.38%, rgba(255, 75, 0, 0.2) 96.22%), radial-gradient(100% 1020.58% at 100% 0%, #ed2f2f 0%, #544ec7 29.57%, #2f80ed 100%);
-  -webkit-box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
   border-radius: 37.4707px;
   border: none;
   font-size: 24px;
   font-weight: 800;
 }
-
 .home .howToJoin .rocket {
   background: url(../img/rocket.png);
   background-repeat: no-repeat;
@@ -754,47 +736,32 @@ nav .explore {
   background-size: 60%;
   padding-bottom: 20rem;
 }
-
 .home .howToJoin .rocket .customCard {
   width: 250px;
   height: 344px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0 1rem;
   background: #160625;
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
-
 .home .howToJoin .rocket .customCard a {
   text-decoration: none;
   margin-top: 2rem;
   color: #02aeca;
 }
-
 .home .howToJoin .rocket .customCard h3 {
   font-size: 20px;
 }
-
 .home .howToJoin h1 {
   font-size: 60px;
   font-weight: 900;
 }
-
 .home .howToJoin p {
   color: #b6b6b6;
 }
@@ -806,19 +773,16 @@ nav .explore {
   background-size: 20%;
   margin-bottom: 8rem !important;
 }
-
 .ourSystem .container {
   background: url(../img/satelite.png);
   background-repeat: no-repeat;
   background-position: center left;
 }
-
 .ourSystem .container h1 {
   font-size: 60px;
   font-weight: 900;
   text-align: center;
 }
-
 .ourSystem .container p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -829,7 +793,6 @@ nav .explore {
   font-size: 60px;
   font-weight: 900;
 }
-
 .howItWorks .container {
   background: url(../img/globe.png);
   background-repeat: no-repeat;
@@ -837,33 +800,21 @@ nav .explore {
   background-size: 55%;
   padding-bottom: 15rem;
 }
-
 .howItWorks .container p {
   color: #b6b6b6;
 }
-
 .howItWorks .container .customCard {
   width: 250px;
   height: 344px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0 1rem;
   background: #160625;
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
@@ -871,95 +822,63 @@ nav .explore {
   font-size: 60px;
   font-weight: 900;
 }
-
 .learnAboutVapourF1 p {
   color: #b6b6b6;
 }
-
 .learnAboutVapourF1 .container {
   background: url(../img/rocketLunch.png);
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 15rem;
 }
-
 .learnAboutVapourF1 .container .customCard {
   width: 270px;
   height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0 1rem;
   background: #160625;
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
-
 .learnAboutVapourF1 .container .cheveron {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f80ed), to(#02aeca));
   background: linear-gradient(180deg, #2f80ed 0%, #02aeca 100%);
   padding: 0.7rem 1.2rem;
   bottom: -1.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   cursor: pointer;
 }
-
 .learnAboutVapourF1 .container .cheveron:hover {
   background: #160625;
-  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-
 .learnAboutVapourF1 .container a {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #2f80ed;
 }
 
 footer p {
   color: #b6b6b6;
 }
-
 footer ul {
   padding: unset;
 }
-
 footer ul .col-md-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 footer ul li {
   list-style: none;
   margin-bottom: 10px;
 }
-
 footer ul li a {
   text-decoration: none;
   color: #b6b6b6;
@@ -970,13 +889,11 @@ footer ul li a {
     margin-inline: 20px !important;
   }
 }
-
 @media (max-width: 1024px) {
   .home .communityDriven h1 {
     font-size: 40px;
   }
 }
-
 @media (max-width: 992px) {
   nav {
     padding-block: 1.5rem !important;
@@ -991,6 +908,7 @@ footer ul li a {
   nav ul:nth-of-type(2) > div {
     margin: 10px 2px 20px 20px;
   }
+
   .home .heroHome {
     min-height: 100vh;
     padding-top: 5rem;
@@ -1002,6 +920,7 @@ footer ul li a {
   .home .communityDriven .container {
     padding-bottom: 7rem;
   }
+
   .planet .galaxy {
     border-right: unset !important;
   }
@@ -1010,11 +929,9 @@ footer ul li a {
   }
   .planet .uranus {
     position: unset !important;
-    -webkit-backdrop-filter: unset !important;
-            backdrop-filter: unset !important;
+    backdrop-filter: unset !important;
     background: unset !important;
-    -webkit-box-shadow: unset !important;
-            box-shadow: unset !important;
+    box-shadow: unset !important;
     border-radius: unset !important;
   }
   .planet .uranus div {
@@ -1025,7 +942,6 @@ footer ul li a {
     width: 40% !important;
   }
 }
-
 @media (max-width: 768px) {
   .home .heroHome h1 span {
     font-size: 60px !important;
@@ -1034,14 +950,15 @@ footer ul li a {
     font-size: 25px;
     white-space: normal !important;
   }
+
   .howItWorks .container {
     padding-bottom: 3rem !important;
   }
+
   .learnAboutVapourF1 .container {
     padding-bottom: 3rem;
   }
 }
-
 @media (max-width: 576px) {
   .home .heroHome h1 span {
     font-size: 40px !important;
@@ -1065,11 +982,11 @@ footer ul li a {
     padding-bottom: 1rem;
   }
 }
-
 @media (max-width: 525px) {
   .home .communityDriven h1 {
     font-size: 20px !important;
   }
+
   .whatIsGalaxyNode {
     padding-bottom: 5rem !important;
   }
@@ -1078,4 +995,5 @@ footer ul li a {
     font-weight: 900;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

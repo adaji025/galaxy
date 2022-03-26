@@ -191,6 +191,7 @@
     .mainContentHolder {
       width: 100%;
       nav {
+        background: $dark-color-200;
         .nav-select {
           appearance: none;
           -moz-appearance: none;
@@ -291,6 +292,7 @@
         .curved-card {
           min-height: 200px;
           width: 100%;
+            padding-top: 7rem !important;
           // clip-path: ellipse(90% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 100%);
           background: rgba(30, 27, 66, 0.4);
@@ -323,6 +325,55 @@
             a {
               text-decoration: none;
               color: #fff;
+            }
+          }
+          .note {
+            div {
+              background: linear-gradient(to right, #FF3D00, #53B9EA);
+              border-radius: 20px;
+              padding: 2px;
+
+              div {
+                background: $dark-color-200;
+              }
+            }
+          }
+          .form {
+            input[type='number'] {
+              background: transparent !important;
+              border: none !important;
+              border-bottom: 1px solid #FFF !important;
+              color: #fff;
+              outline: none !important;
+              &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+              }
+            }
+            input[type='range'] {
+              height: 2px;
+            }
+            .compound > label {
+              @media (max-width: 576px) {
+                font-size: 18px !important;
+              }
+            }
+            .reward > span {
+              @media (max-width: 576px) {
+                font-size: 18px !important;
+              }
+            }
+          }
+          @media (max-width: 768px) {
+
+            .estimateIncome {
+              h5 {
+                font-size: 18px;
+              }
+              h2 {
+                font-size: 20px;
+                line-height: 1rem;
+              }
             }
           }
         }
@@ -359,8 +410,7 @@
               font-feature-settings: "salt" on, "liga" off;
               color: #ffffff;
             }
-            p {
-            }
+           
             &.custom-green-card {
               background: linear-gradient(180deg, #50e3c2 0%, #00c599 100%);
               backdrop-filter: blur(40px);
