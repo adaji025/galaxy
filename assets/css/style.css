@@ -113,6 +113,32 @@ nav .explore {
   padding: 0.8rem 3rem;
 }
 
+.home .communityDriven .container {
+  padding-bottom: 12rem;
+  background-image: url(../img/semiCircle.svg);
+  background-position: center 220px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.home .communityDriven h1 {
+  font-size: 56px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.home .communityDriven .buy {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.7%, #0080FF), color-stop(101.56%, #00B0C8));
+  background: linear-gradient(90deg, #0080FF 1.7%, #00B0C8 101.56%);
+  opacity: 0.9;
+  color: white;
+}
+
+.home .communityDriven .buy img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .home .heroHome {
   background: url(../img/galaxy.svg);
   background-repeat: no-repeat;
@@ -465,6 +491,18 @@ footer ul li a {
   color: #b6b6b6;
 }
 
+@media (max-width: 1138px) {
+  .home .planet {
+    margin-inline: 20px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home .communityDriven h1 {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 992px) {
   nav {
     padding-block: 1.5rem !important;
@@ -483,6 +521,12 @@ footer ul li a {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  .home .communityDriven {
+    padding-top: 7rem;
+  }
+  .home .communityDriven .container {
+    padding-bottom: 7rem;
   }
   .planet .galaxy {
     border-right: unset !important;
@@ -511,6 +555,10 @@ footer ul li a {
 @media (max-width: 768px) {
   .home .heroHome h1 span {
     font-size: 60px !important;
+  }
+  .home .communityDriven h1 {
+    font-size: 25px;
+    white-space: normal !important;
   }
   .howItWorks .container {
     padding-bottom: 3rem !important;
@@ -545,6 +593,9 @@ footer ul li a {
 }
 
 @media (max-width: 525px) {
+  .home .communityDriven h1 {
+    font-size: 20px !important;
+  }
   .whatIsGalaxyNode {
     padding-bottom: 5rem !important;
   }
