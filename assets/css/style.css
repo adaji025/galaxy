@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -182,16 +183,16 @@ nav .explore {
 
 .planet .galaxy {
   width: 85%;
-  border-right: 1px solid #7E8EA7B2;
+  border-right: 1px solid #7e8ea7b2;
 }
 
 .planet .uranus {
   height: 291.64px;
   width: 240px;
   top: -50%;
-  background: radial-gradient(100% 1020.58% at 100% 0%, #53B9EA 0%, #2F80ED 29.57%, #2F80ED 100%);
-  -webkit-box-shadow: 3px 2px 70px 2px #53B9EA, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: 3px 2px 70px 2px #53B9EA, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(100% 1020.58% at 100% 0%, #53b9ea 0%, #2f80ed 29.57%, #2f80ed 100%);
+  -webkit-box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -280,7 +281,7 @@ nav .explore {
 .howToJoin .rocket .customCard a {
   text-decoration: none;
   margin-top: 2rem;
-  color: #02AECA;
+  color: #02aeca;
 }
 
 .howToJoin .rocket .customCard h3 {
@@ -293,6 +294,168 @@ nav .explore {
 }
 
 .howToJoin p {
+  color: #b6b6b6;
+}
+
+.ourSystem {
+  background: url(../img/blackParticles.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20%;
+  margin-bottom: 8rem !important;
+}
+
+.ourSystem .container {
+  background: url(../img/satelite.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.ourSystem .container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.ourSystem .container p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #b6b6b6;
+}
+
+.howItWorks h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.howItWorks .container {
+  background: url(../img/globe.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 55%;
+  padding-bottom: 15rem;
+}
+
+.howItWorks .container p {
+  color: #b6b6b6;
+}
+
+.howItWorks .container .customCard {
+  width: 250px;
+  height: 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  background: #160625;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.learnAboutVapourF1 h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.learnAboutVapourF1 p {
+  color: #b6b6b6;
+}
+
+.learnAboutVapourF1 .container {
+  background: url(../img/rocketLunch.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 15rem;
+}
+
+.learnAboutVapourF1 .container .customCard {
+  width: 270px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  background: #160625;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.learnAboutVapourF1 .container .cheveron {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f80ed), to(#02aeca));
+  background: linear-gradient(180deg, #2f80ed 0%, #02aeca 100%);
+  padding: 0.7rem 1.2rem;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.learnAboutVapourF1 .container .cheveron:hover {
+  background: #160625;
+  -webkit-box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.learnAboutVapourF1 .container a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2f80ed;
+}
+
+footer ul {
+  padding: unset;
+}
+
+footer ul .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
   color: #b6b6b6;
 }
 

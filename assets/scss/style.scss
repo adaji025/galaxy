@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import "./variables.scss";
 
 * {
@@ -174,7 +175,7 @@ nav {
   }
   .galaxy {
     width: 85%;
-    border-right: 1px solid #7E8EA7B2;
+    border-right: 1px solid #7e8ea7b2;
   }
   .uranus {
     height: 291.64px;
@@ -182,16 +183,15 @@ nav {
     top: -50%;
     background: radial-gradient(
         100% 1020.58% at 100% 0%,
-        #53B9EA 0%,
-        #2F80ED 29.57%,
-        #2F80ED 100%
+        #53b9ea 0%,
+        #2f80ed 29.57%,
+        #2f80ed 100%
       )
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    box-shadow: 3px 2px 70px 2px #53B9EA, 
-    inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+    box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25),
       // inset 0px 4px 50px rgba(0, 0, 0, 0.25),
       inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     div {
       display: flex;
@@ -204,7 +204,6 @@ nav {
     }
   }
   .venus {
-
   }
   .planetContent {
   }
@@ -226,74 +225,208 @@ nav {
   }
   .createNode {
     background: linear-gradient(
-          80.82deg,
-          rgba(255, 75, 0, 0.2) 53.38%,
-          rgba(255, 75, 0, 0.2) 96.22%
-        ),
-        radial-gradient(
-            100% 1020.58% at 100% 0%,
-            #ed2f2f 0%,
-            #544ec7 29.57%,
-            #2f80ed 100%
-          )
-          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-      box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
-        inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
-        inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
-      border-radius: 37.4707px;
-      border: none;
-      font-size: 24px;
-      font-weight: 800;
+        80.82deg,
+        rgba(255, 75, 0, 0.2) 53.38%,
+        rgba(255, 75, 0, 0.2) 96.22%
+      ),
+      radial-gradient(
+          100% 1020.58% at 100% 0%,
+          #ed2f2f 0%,
+          #544ec7 29.57%,
+          #2f80ed 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
+      inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
+      inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
+    border-radius: 37.4707px;
+    border: none;
+    font-size: 24px;
+    font-weight: 800;
   }
 }
 
 .howToJoin {
   .rocket {
     background: url(../img/rocket.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
- padding-bottom: 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    padding-bottom: 20rem;
 
-  .customCard {
-    width: 250px;
-    height: 344px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
-   background: #160625;
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9), 
-  inset 0px 4px 50px rgba(0, 0, 0, 0.25),
-    // inset 0px 4px 50px rgba(0, 0, 0, 0.25),
-    inset 0px 4px 30px rgba(0, 0, 0, 0.25);
-    // backdrop-filter: blur(70px);
-  border-radius: 20px;
-  
-  a {
-    text-decoration: none;
-    margin-top: 2rem;
-    color: #02AECA;
+    .customCard {
+      width: 250px;
+      height: 344px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+      background: #160625;
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9),
+        inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        // inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+      // backdrop-filter: blur(70px);
+      border-radius: 20px;
+
+      a {
+        text-decoration: none;
+        margin-top: 2rem;
+        color: #02aeca;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
   }
-  h3 {
-    font-size: 20px;
-  }
-  }
-  }
-  
+
   h1 {
     font-size: 60px;
-  font-weight: 900;
+    font-weight: 900;
   }
   p {
     color: $gray-color;
-    
   }
 }
 
+.ourSystem {
+  background: url(../img/blackParticles.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20%;
+  margin-bottom: 8rem !important;
+
+  .container {
+    background: url(../img/satelite.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 900;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      color: $gray-color;
+    }
+  }
+}
+
+.howItWorks {
+  h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  .container {
+    background: url(../img/globe.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 55%;
+    padding-bottom: 15rem;
+
+    p {
+      color: $gray-color;
+    }
+    .customCard {
+      width: 250px;
+      height: 344px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+      background: #160625;
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9),
+        inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        // inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+      // backdrop-filter: blur(70px);
+      border-radius: 20px;
+    }
+  }
+}
+
+.learnAboutVapourF1 {
+  h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  p {
+    color: $gray-color;
+  }
+  .container {
+    background: url(../img/rocketLunch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15rem;
+    .customCard {
+      width: 270px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+      background: #160625;
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      box-shadow: inset 3px 2px 40px 2px rgba(140, 140, 160, 0.9),
+        inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        // inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+        inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+      // backdrop-filter: blur(70px);
+      border-radius: 20px;
+    }
+    .cheveron {
+      background: linear-gradient(180deg, #2f80ed 0%, #02aeca 100%);
+      padding: 0.7rem 1.2rem;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+
+      &:hover {
+        background: #160625;
+        box-shadow: inset 3px 2px 40px 2px rgba(35, 35, 35, 0.5),
+          inset 0px 4px 50px rgba(0, 0, 0, 0.25),
+          inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+
+      }
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #2f80ed;
+    }
+  }
+}
+
+footer {
+  ul {
+    .col-md-6 {
+      display: flex;
+      flex-direction: column;
+    }
+    padding: unset;
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        color: $gray-color;
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   nav {
     padding-block: 1.5rem !important;
