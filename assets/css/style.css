@@ -207,6 +207,12 @@
 .dashboard-wrapper .mainContent .mainContentHolder nav .left-border {
   border-left: 3px solid #494949;
 }
+@media screen and (max-width: 768px) {
+  .dashboard-wrapper .mainContent .mainContentHolder nav .left-border {
+    border-left: none;
+    padding-left: 0 !important;
+  }
+}
 .dashboard-wrapper .mainContent .mainContentHolder nav ul li {
   margin-right: 18px;
 }
@@ -214,6 +220,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .dashboard-wrapper .mainContent .mainContentHolder nav ul li {
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+  }
 }
 .dashboard-wrapper .mainContent .mainContentHolder main .welcome-header h6 {
   font-style: normal;
@@ -234,8 +246,93 @@
 .dashboard-wrapper .mainContent .mainContentHolder main .curved-card {
   min-height: 200px;
   width: 100%;
-  clip-path: ellipse(75% 100% at 50% 100%);
+  clip-path: ellipse(100% 100% at 50% 100%);
   background: rgba(30, 27, 66, 0.4);
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #5b5a99;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card p span {
+  color: #fff585;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card button {
+  background: #13b2e6;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card button a {
+  text-decoration: none;
+  color: #fff;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .card {
+  background: #121029;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .card h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #b1afcd;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .card p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #b1afcd;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .stats .card h6,
+.dashboard-wrapper .mainContent .mainContentHolder main .stats .card p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .stats .card.custom-green-card {
+  background: linear-gradient(180deg, #50e3c2 0%, #00c599 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .stats .card.custom-purple-card {
+  background: linear-gradient(180deg, #c72fed 0%, #a500ce 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .stats .card.custom-blue-card {
+  background: linear-gradient(180deg, #13b2e6 0%, #2f80ed 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .empty-node p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .empty-node button {
+  background: #13b2e6;
+  border-radius: 4px;
 }
 
 .flex-col {

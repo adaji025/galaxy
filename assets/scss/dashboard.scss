@@ -243,6 +243,10 @@
         }
         .left-border {
           border-left: 3px solid #494949;
+          @media screen and (max-width: 768px) {
+            border-left: none;
+            padding-left: 0 !important;
+          }
         }
 
         ul {
@@ -253,6 +257,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+          }
+          @media screen and (max-width: 768px) {
+            li {
+              margin-bottom: 10px !important;
+              margin-top: 0 !important;
+            }
           }
         }
       }
@@ -279,9 +289,106 @@
           min-height: 200px;
           width: 100%;
           // clip-path: ellipse(90% 100% at 50% 0%);
-          clip-path: ellipse(75% 100% at 50% 100%);
+          clip-path: ellipse(100% 100% at 50% 100%);
           background: rgba(30, 27, 66, 0.4);
           // background: rgba(105, 97, 189, 0.4);
+          h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            font-feature-settings: "salt" on, "liga" off;
+
+            color: #ffffff;
+
+            mix-blend-mode: normal;
+            opacity: 0.9;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            font-feature-settings: "salt" on, "liga" off;
+            color: #5b5a99;
+            span {
+              color: #fff585;
+            }
+          }
+          button {
+            background: #13b2e6;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+        .card {
+          background: #121029;
+          backdrop-filter: blur(40px);
+          border-radius: 10px;
+          h6 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 144%;
+            font-feature-settings: "salt" on, "liga" off;
+            color: #b1afcd;
+          }
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 144%;
+            font-feature-settings: "salt" on, "liga" off;
+
+            color: #b1afcd;
+          }
+        }
+        .stats {
+          .card {
+            h6,
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 144%;
+              font-feature-settings: "salt" on, "liga" off;
+              color: #ffffff;
+            }
+            p {
+            }
+            &.custom-green-card {
+              background: linear-gradient(180deg, #50e3c2 0%, #00c599 100%);
+              backdrop-filter: blur(40px);
+              border-radius: 10px;
+            }
+            &.custom-purple-card {
+              background: linear-gradient(180deg, #c72fed 0%, #a500ce 100%);
+              backdrop-filter: blur(40px);
+              border-radius: 10px;
+            }
+            &.custom-blue-card {
+              background: linear-gradient(180deg, #13b2e6 0%, #2f80ed 100%);
+              backdrop-filter: blur(40px);
+              border-radius: 10px;
+            }
+          }
+        }
+        .empty-node {
+          p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: 0.5px;
+
+            color: #ffffff;
+          }
+          button {
+            background: #13b2e6;
+            border-radius: 4px;
+          }
         }
       }
     }
