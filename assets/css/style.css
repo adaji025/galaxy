@@ -113,34 +113,34 @@ nav .explore {
   padding: 0.8rem 3rem;
 }
 
-.heroHome {
+.home .heroHome {
   background: url(../img/galaxy.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
 }
 
-.heroHome .frock {
-  height: 80vh;
+.home .heroHome .frock {
+  min-height: 80vh;
 }
 
-.heroHome .frock h1 {
+.home .heroHome .frock h1 {
   margin-top: 3rem;
   font-weight: 900;
 }
 
-.heroHome .frock h1 span {
+.home .heroHome .frock h1 span {
   font-size: 85px;
 }
 
-.heroHome .frock h1 span:nth-of-type(2) {
+.home .heroHome .frock h1 span:nth-of-type(2) {
   background: -webkit-gradient(linear, left top, right top, from(#FF00C7), to(#6C2ED0)) border-box;
   background: linear-gradient(to right, #FF00C7, #6C2ED0) border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.heroHome .frock button {
+.home .heroHome .frock button {
   background: linear-gradient(80.82deg, rgba(255, 75, 0, 0.2) 53.38%, rgba(255, 75, 0, 0.2) 96.22%), radial-gradient(100% 1020.58% at 100% 0%, #ed2f2f 0%, #544ec7 29.57%, #2f80ed 100%);
   -webkit-box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
@@ -150,24 +150,24 @@ nav .explore {
   font-weight: 800;
 }
 
-.heroHome .frock .circle {
+.home .heroHome .frock .circle {
   background: url(../img/pink-circle.svg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
 }
 
-.heroHome .frock .circle img:nth-of-type(2) {
+.home .heroHome .frock .circle img:nth-of-type(2) {
   left: 0;
   top: 30%;
   width: 35%;
 }
 
-.community {
+.home .community {
   border-bottom: 1px solid #fff;
 }
 
-.planet {
+.home .planet {
   max-width: 1100px;
   background: transparent;
   -webkit-box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -177,18 +177,19 @@ nav .explore {
           backdrop-filter: blur(10px);
 }
 
-.planet h1 {
+.home .planet h1 {
   font-size: 24px;
+  font-weight: 900;
 }
 
-.planet .galaxy {
+.home .planet .galaxy {
   width: 85%;
   border-right: 1px solid #7e8ea7b2;
 }
 
-.planet .uranus {
-  height: 291.64px;
+.home .planet .uranus {
   width: 240px;
+  position: absolute;
   top: -50%;
   background: radial-gradient(100% 1020.58% at 100% 0%, #53b9ea 0%, #2f80ed 29.57%, #2f80ed 100%);
   -webkit-box-shadow: 3px 2px 70px 2px #53b9ea, inset 0px 4px 50px rgba(0, 0, 0, 0.25), inset 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -198,7 +199,7 @@ nav .explore {
   border-radius: 20px;
 }
 
-.planet .uranus div {
+.home .planet .uranus div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,14 +210,15 @@ nav .explore {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 261px;
+  padding-bottom: 2.2rem;
+  padding-top: 2.2rem;
 }
 
-.planet .uranus p {
+.home .planet .uranus p {
   font-size: 14px;
 }
 
-.whatIsGalaxyNode {
+.home .whatIsGalaxyNode {
   background: url(../img//particle.svg);
   background-repeat: no-repeat;
   background-size: 15%;
@@ -225,17 +227,17 @@ nav .explore {
   padding-bottom: 10rem;
 }
 
-.whatIsGalaxyNode h1 {
+.home .whatIsGalaxyNode h1 {
   font-size: 60px;
   font-weight: 900;
 }
 
-.whatIsGalaxyNode .text {
+.home .whatIsGalaxyNode .text {
   font-size: 18px;
   color: #b6b6b6;
 }
 
-.whatIsGalaxyNode .createNode {
+.home .whatIsGalaxyNode .createNode {
   background: linear-gradient(80.82deg, rgba(255, 75, 0, 0.2) 53.38%, rgba(255, 75, 0, 0.2) 96.22%), radial-gradient(100% 1020.58% at 100% 0%, #ed2f2f 0%, #544ec7 29.57%, #2f80ed 100%);
   -webkit-box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25), inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
@@ -245,7 +247,7 @@ nav .explore {
   font-weight: 800;
 }
 
-.howToJoin .rocket {
+.home .howToJoin .rocket {
   background: url(../img/rocket.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -253,7 +255,7 @@ nav .explore {
   padding-bottom: 20rem;
 }
 
-.howToJoin .rocket .customCard {
+.home .howToJoin .rocket .customCard {
   width: 250px;
   height: 344px;
   display: -webkit-box;
@@ -278,22 +280,22 @@ nav .explore {
   border-radius: 20px;
 }
 
-.howToJoin .rocket .customCard a {
+.home .howToJoin .rocket .customCard a {
   text-decoration: none;
   margin-top: 2rem;
   color: #02aeca;
 }
 
-.howToJoin .rocket .customCard h3 {
+.home .howToJoin .rocket .customCard h3 {
   font-size: 20px;
 }
 
-.howToJoin h1 {
+.home .howToJoin h1 {
   font-size: 60px;
   font-weight: 900;
 }
 
-.howToJoin p {
+.home .howToJoin p {
   color: #b6b6b6;
 }
 
@@ -435,6 +437,10 @@ nav .explore {
   color: #2f80ed;
 }
 
+footer p {
+  color: #b6b6b6;
+}
+
 footer ul {
   padding: unset;
 }
@@ -462,12 +468,89 @@ footer ul li a {
 @media (max-width: 992px) {
   nav {
     padding-block: 1.5rem !important;
+    position: absolute !important;
+    width: 100%;
+    z-index: 1;
+    background: #0c001d;
   }
   nav .navbar-brand h1 {
     font-size: 26px;
   }
   nav ul:nth-of-type(2) > div {
     margin: 10px 2px 20px 20px;
+  }
+  .home .heroHome {
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .planet .galaxy {
+    border-right: unset !important;
+  }
+  .planet .marImg {
+    width: 80px !important;
+  }
+  .planet .uranus {
+    position: unset !important;
+    -webkit-backdrop-filter: unset !important;
+            backdrop-filter: unset !important;
+    background: unset !important;
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    border-radius: unset !important;
+  }
+  .planet .uranus div {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+  }
+  .planet .uranus div img {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .heroHome h1 span {
+    font-size: 60px !important;
+  }
+  .howItWorks .container {
+    padding-bottom: 3rem !important;
+  }
+  .learnAboutVapourF1 .container {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home .heroHome h1 span {
+    font-size: 40px !important;
+  }
+  .home .howToJoin .rocket {
+    padding-bottom: 2rem;
+  }
+  .home .howToJoin h1 {
+    font-size: 30px;
+  }
+  .home .ourSystem h1 {
+    font-size: 30px;
+  }
+  .home .howItWorks h1 {
+    font-size: 30px;
+  }
+  .home .learnAboutVapourF1 h1 {
+    font-size: 26px;
+  }
+  .home .learnAboutVapourF1 .container {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .whatIsGalaxyNode {
+    padding-bottom: 5rem !important;
+  }
+  .whatIsGalaxyNode h1 {
+    font-size: 30px !important;
+    font-weight: 900;
   }
 }
 /*# sourceMappingURL=style.css.map */
