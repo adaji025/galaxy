@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>VapourFI - Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <div class="mainContent">
+        <div class="sidebarHolder d-none d-lg-block">
+          <aside class="">
+            <div class="sideBarWrapper">
+              <div class="sideBarWrapper-content py-5">
+                <div class="top-sidebar-item-holder">
+                  <a href="index.html">
+                    <div class="d-flex sidebar-item ps-5">
+                      <div class="sidebar-item-icon me-3">
+                        <img src="./assets/img/Logo.svg" class="me-3" alt="" />
+                      </div>
+                      <div class="sidebar-item-text">
+                        <h3>VapourFI</h3>
+                      </div>
+                    </div>
+                    <div class="sidebar-item-icon icon-only me-3">
+                      <img src="./assets/img/Logo.svg" class="me-3" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="other-sidebar-items-holder">
+                  <div class="single-sidebar-item mb-5">
+                    <a href="dashboard.html">
+                      <div class="d-flex sidebar-item justify-content-start">
+                        <div class="sidebar-item-icon state-icon me-3">
+                          <img
+                            src="./assets/img/active-state-dot.svg"
+                            class="me-3"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <div class="sidebar-item-icon me-3">
+                            <img
+                              src="./assets/img/dash-active.svg"
+                              class="me-3 active"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/img/dash-inactive.svg"
+                              class="me-3 inactive"
+                              alt=""
+                            />
+                          </div>
+                          <div class="sidebar-item-text">
+                            <h3 class="mb-0">Dashboard</h3>
+                          </div>
+                        </div>
+                        <div class="sidebar-item-noti-icon ms-auto me-5">
+                          <img
+                            src="./assets/img/Notimark.svg"
+                            class=""
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="sidebar-item-icon icon-only me-3">
+                        <img
+                          src="./assets/img/dash-active.svg"
+                          class="me-3 active"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/img/dash-inactive.svg"
+                          class="me-3 inactive"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-sidebar-item mb-5">
+                    <a href="nodes.html">
+                      <div class="d-flex sidebar-item justify-content-start">
+                        <div class="sidebar-item-icon state-icon me-3">
+                          <img
+                            src="./assets/img/active-state-dot.svg"
+                            class="me-3"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <div class="sidebar-item-icon me-3">
+                            <img
+                              src="./assets/img/node-active.svg"
+                              class="me-3 active"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/img/node-inactive.svg"
+                              class="me-3 inactive"
+                              alt=""
+                            />
+                          </div>
+                          <div class="sidebar-item-text">
+                            <h3 class="mb-0">Nodes</h3>
+                          </div>
+                        </div>
+                        <div class="sidebar-item-noti-icon ms-auto me-5">
+                          <img
+                            src="./assets/img/Notimark.svg"
+                            class=""
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="sidebar-item-icon icon-only me-3">
+                        <img
+                          src="./assets/img/node-active.svg"
+                          class="me-3 active"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/img/node-inactive.svg"
+                          class="me-3 inactive"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-sidebar-item mb-5">
+                    <a href="referral.html">
+                      <div
+                        class="d-flex sidebar-item active justify-content-start"
+                      >
+                        <div class="sidebar-item-icon state-icon me-3">
+                          <img
+                            src="./assets/img/active-state-dot.svg"
+                            class="me-3"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <div class="sidebar-item-icon me-3">
+                            <img
+                              src="./assets/img/ref-active.svg"
+                              class="me-3 active"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/img/ref-inactive.svg"
+                              class="me-3 inactive"
+                              alt=""
+                            />
+                          </div>
+                          <div class="sidebar-item-text">
+                            <h3 class="mb-0">Referral</h3>
+                          </div>
+                        </div>
+                        <div class="sidebar-item-noti-icon ms-auto me-5">
+                          <img
+                            src="./assets/img/Notimark.svg"
+                            class=""
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="sidebar-item-icon icon-only active me-3">
+                        <img
+                          src="./assets/img/ref-active.svg"
+                          class="me-3 active"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/img/ref-inactive.svg"
+                          class="me-3 inactive"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-sidebar-item mb-5">
+                    <a href="calculator.html">
+                      <div class="d-flex sidebar-item justify-content-start">
+                        <div class="sidebar-item-icon state-icon me-3">
+                          <img
+                            src="./assets/img/active-state-dot.svg"
+                            class="me-3"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <div class="sidebar-item-icon me-3">
+                            <img
+                              src="./assets/img/calc-active.svg"
+                              class="me-3 active"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/img/calc-inactive.svg"
+                              class="me-3 inactive"
+                              alt=""
+                            />
+                          </div>
+                          <div class="sidebar-item-text">
+                            <h3 class="mb-0">Calculator</h3>
+                          </div>
+                        </div>
+                        <div class="sidebar-item-noti-icon ms-auto me-5">
+                          <img
+                            src="./assets/img/Notimark.svg"
+                            class=""
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="sidebar-item-icon icon-only me-3">
+                        <img
+                          src="./assets/img/calc-active.svg"
+                          class="me-3 active"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/img/calc-inactive.svg"
+                          class="me-3 inactive"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-sidebar-item mb-5">
+                    <a href="#">
+                      <div class="d-flex sidebar-item justify-content-start">
+                        <div class="sidebar-item-icon state-icon me-3">
+                          <img
+                            src="./assets/img/active-state-dot.svg"
+                            class="me-3"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-flex">
+                          <div class="sidebar-item-icon me-3">
+                            <img
+                              src="./assets/img/acct-active.svg"
+                              class="me-3 active"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/img/acct-inactive.svg"
+                              class="me-3 inactive"
+                              alt=""
+                            />
+                          </div>
+                          <div class="sidebar-item-text">
+                            <h3 class="mb-0">Account Settings</h3>
+                          </div>
+                        </div>
+                        <div class="sidebar-item-noti-icon ms-auto me-5">
+                          <img
+                            src="./assets/img/Notimark.svg"
+                            class=""
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="sidebar-item-icon icon-only me-3">
+                        <img
+                          src="./assets/img/acct-active.svg"
+                          class="me-3 active"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/img/acct-inactive.svg"
+                          class="me-3 inactive"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- <div class="sidebar-card-holder p-5">
+                  <div class="sidebar-card my-5 text-center">
+                    <img src="assets/img/security-icon.svg" alt="" />
+                    <h4 class="mb-5">Keep you safe!</h4>
+                    <p>
+                      Update your security password, keep your account safe!
+                    </p>
+                    <h4 class="my-5 pointer">Update Privacy</h4>
+                  </div>
+                </div> -->
+                <div
+                  class="sidebar-toggler d-flex my-5 justify-content-end"
+                  id="sidebarCollapse"
+                >
+                  <img src="assets/img/open-toggler.svg" alt="" class="open" />
+                  <img
+                    src="assets/img/close-toggler.svg"
+                    alt=""
+                    class="close"
+                  />
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="mainContentHolder container">
+          <nav class="navbar navbar-expand-xl navbar-light sticky-top">
+            <div class="container">
+              <a class="navbar-brand d-block d-lg-none" href="#">
+                <h1>ValourFi</h1>
+              </a>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pangea-regular ixam-dark-color">
+                  <li class="nav-item active">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">
+                        <img
+                          src="./assets/img/globe.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </span>
+                      <select name="" class="form-control nav-select" id="">
+                        <option value="EN">EN</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white nav-btn px-4" href="#"
+                      ><img
+                        src="./assets/img/metamask.svg"
+                        class="me-2"
+                        alt=""
+                      />
+                      Metamask</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white nav-btn px-4" href="#"
+                      ><img
+                        src="./assets/img/walletconnect.svg"
+                        class="me-2"
+                        alt=""
+                      />
+                      Walletconnect</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link text-white nav-btn-blue px-4"
+                      href="#strategy"
+                      >VPND</a
+                    >
+                  </li>
+                  <li class="nav-item left-border ps-3 my-3">
+                    <a
+                      class="nav-link text-white nav-btn-purple px-4 py-2"
+                      href="#services"
+                      ><img
+                        src="./assets/img/noti-icon.svg"
+                        class="me-2"
+                        alt=""
+                      />
+                      15
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <img
+                      src="./assets/img/Face.svg"
+                      class="me-2 profile-img"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <main>
+            <div class="container my-4">
+              <div class="row mt-5">
+                <div class="col-12">
+                  <div class="referral-page-wrapper">
+                    <h2>Share & Earn</h2>
+                    <div class="row">
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Total Earning(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Paid Earning(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Current Balance(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="how-it-works py-3 py-lg-5">
+                          <h2>How it works</h2>
+                          <ol>
+                            <li>Create a Node.</li>
+                            <li>Copy the unique link in your Referral tab.</li>
+                            <li>
+                              Share the link with your friends, ask them to
+                              create a node.
+                            </li>
+                            <li>
+                              Once they do, you'll get a 5% commission, on the
+                              amount they used to create a node.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="referrals py-3 py-lg-5">
+                          <h2>Your Referral Link</h2>
+                          <div class="wallet-address-holder">
+                            <div class="wallet-address-holder-input-wrapper">
+                              <label for="">Referral Link</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Connect your wallet first"
+                                readonly
+                              />
+                              <div class="ref-copy d-flex align-items-center">
+                                <span>Copy</span>
+                                <img src="assets/img/ref-copy.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-5">
+                            <a href="https://twitter.com" target="_blank">
+                              <img
+                                src="assets/img/twitter.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://producthunt.com" target="_blank">
+                              <img
+                                src="assets/img/producthunt.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://github.com" target="_blank">
+                              <img
+                                src="assets/img/github.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://reddit.com" target="_blank">
+                              <img
+                                src="assets/img/reddit.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://bitcointalk.org" target="_blank">
+                              <img
+                                src="assets/img/bitcointalk.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://stacks.co" target="_blank">
+                              <img
+                                src="assets/img/blockstack.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                          </div>
+                          <div class="ref-button pointer text-center my-5">
+                            Withdraw commision
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#sidebarCollapse").on("click", function () {
+        $(".sideBarWrapper").toggleClass("active");
+      });
+    });
+  </script>
+</html>
