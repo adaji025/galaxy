@@ -157,6 +157,9 @@
 .dashboard-wrapper .mainContent .mainContentHolder {
   width: 100%;
 }
+.dashboard-wrapper .mainContent .mainContentHolder nav {
+  background: #0c001d;
+}
 .dashboard-wrapper .mainContent .mainContentHolder nav .nav-select {
   appearance: none;
   -moz-appearance: none;
@@ -252,6 +255,7 @@
 .dashboard-wrapper .mainContent .mainContentHolder main .curved-card {
   min-height: 200px;
   width: 100%;
+  padding-top: 7rem !important;
   clip-path: ellipse(100% 100% at 50% 100%);
   background: rgba(30, 27, 66, 0.4);
 }
@@ -282,6 +286,47 @@
 .dashboard-wrapper .mainContent .mainContentHolder main .curved-card button a {
   text-decoration: none;
   color: #fff;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .note div {
+  background: linear-gradient(to right, #FF3D00, #53B9EA);
+  border-radius: 20px;
+  padding: 2px;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .note div div {
+  background: #0c001d;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=number] {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #FFF !important;
+  color: #fff;
+  outline: none !important;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=number]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form input[type=range] {
+  height: 2px;
+}
+@media (max-width: 576px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form .compound > label {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 576px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .form .reward > span {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .estimateIncome h5 {
+    font-size: 18px;
+  }
+  .dashboard-wrapper .mainContent .mainContentHolder main .curved-card .estimateIncome h2 {
+    font-size: 20px;
+    line-height: 1rem;
+  }
 }
 .dashboard-wrapper .mainContent .mainContentHolder main .card {
   background: #121029;
