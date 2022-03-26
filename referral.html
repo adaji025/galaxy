@@ -115,7 +115,7 @@
                           />
                         </div>
                       </div>
-                      <div class="sidebar-item-icon icon-only active me-3">
+                      <div class="sidebar-item-icon icon-only me-3">
                         <img
                           src="./assets/img/node-active.svg"
                           class="me-3 active"
@@ -129,9 +129,11 @@
                       </div>
                     </a>
                   </div>
-                  <div class="single-sidebar-item active mb-5">
+                  <div class="single-sidebar-item mb-5">
                     <a href="referral.html">
-                      <div class="d-flex sidebar-item justify-content-start">
+                      <div
+                        class="d-flex sidebar-item active justify-content-start"
+                      >
                         <div class="sidebar-item-icon state-icon me-3">
                           <img
                             src="./assets/img/active-state-dot.svg"
@@ -179,7 +181,7 @@
                     </a>
                   </div>
                   <div class="single-sidebar-item mb-5">
-                    <a href="nodes.html">
+                    <a href="calculator.html">
                       <div class="d-flex sidebar-item justify-content-start">
                         <div class="sidebar-item-icon state-icon me-3">
                           <img
@@ -228,7 +230,7 @@
                     </a>
                   </div>
                   <div class="single-sidebar-item mb-5">
-                    <a href="nodes.html">
+                    <a href="#">
                       <div class="d-flex sidebar-item justify-content-start">
                         <div class="sidebar-item-icon state-icon me-3">
                           <img
@@ -390,20 +392,120 @@
           </nav>
           <main>
             <div class="container my-4">
-              <div class="row">
+              <div class="row mt-5">
                 <div class="col-12">
-                  <div class="d-flex justify-content-center">
-                    <div class="empty-node my-5">
-                      <div class="d-flex justify-content-center mb-5">
-                        <img src="assets/img/no-node.svg" alt="" />
+                  <div class="referral-page-wrapper">
+                    <h2>Share & Earn</h2>
+                    <div class="row">
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Total Earning(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
                       </div>
-                      <p class="mb-5">It’s so empty around here</p>
-                      <div class="d-flex justify-content-center mb-5">
-                        <button
-                          class="btn btn-primary btn-lg text-uppercase px-5"
-                        >
-                          Create Node
-                        </button>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Paid Earning(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <div class="outer-card">
+                          <div class="inner-card p-4">
+                            <p>Current Balance(VPND)</p>
+                            <h2 class="mb-0">0.0</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="how-it-works py-3 py-lg-5">
+                          <h2>How it works</h2>
+                          <ol>
+                            <li>Create a Node.</li>
+                            <li>Copy the unique link in your Referral tab.</li>
+                            <li>
+                              Share the link with your friends, ask them to
+                              create a node.
+                            </li>
+                            <li>
+                              Once they do, you'll get a 5% commission, on the
+                              amount they used to create a node.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="referrals py-3 py-lg-5">
+                          <h2>Your Referral Link</h2>
+                          <div class="wallet-address-holder">
+                            <div class="wallet-address-holder-input-wrapper">
+                              <label for="">Referral Link</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Connect your wallet first"
+                                readonly
+                              />
+                              <div class="ref-copy d-flex align-items-center">
+                                <span>Copy</span>
+                                <img src="assets/img/ref-copy.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-5">
+                            <a href="https://twitter.com" target="_blank">
+                              <img
+                                src="assets/img/twitter.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://producthunt.com" target="_blank">
+                              <img
+                                src="assets/img/producthunt.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://github.com" target="_blank">
+                              <img
+                                src="assets/img/github.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://reddit.com" target="_blank">
+                              <img
+                                src="assets/img/reddit.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://bitcointalk.org" target="_blank">
+                              <img
+                                src="assets/img/bitcointalk.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                            <a href="https://stacks.co" target="_blank">
+                              <img
+                                src="assets/img/blockstack.svg"
+                                alt=""
+                                class="me-2"
+                              />
+                            </a>
+                          </div>
+                          <div class="ref-button pointer text-center my-5">
+                            Withdraw commision
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
